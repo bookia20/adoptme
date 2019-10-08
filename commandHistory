@@ -1,0 +1,16 @@
+node -v
+npm -v
+npm init -y
+#creates packages.json
+npm i -D prettier
+# after this add prettier to scripts section of packages.json
+# also search for "format on save" and "require config" (require .prettierrc) in the vscode settings
+# with this you actually don't need to run following command every change 
+npm run format
+npm install -D eslint eslint-config-prettier
+npm run lint
+npm install -D parcel-bundler
+# add the script to packages.json
+npm run dev
+# add react modules to the project so that you can remove direct loading them from cdn
+npm install react react-dom
